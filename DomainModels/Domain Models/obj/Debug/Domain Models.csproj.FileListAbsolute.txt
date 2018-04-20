@@ -9,3 +9,13 @@ C:\Users\Ahmad\Documents\Visual Studio 2012\Projects\DomainModels\Domain Models\
 C:\Users\Ahmad\Documents\Visual Studio 2012\Projects\DomainModels\Domain Models\bin\Debug\Domain Models.pdb
 C:\Users\Ahmad\Documents\Visual Studio 2012\Projects\DomainModels\Domain Models\obj\Debug\Domain Models.exe
 C:\Users\Ahmad\Documents\Visual Studio 2012\Projects\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe.config
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csprojResolveAssemblyReference.cache
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.pdb
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.exe
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.registrationfrm.resources

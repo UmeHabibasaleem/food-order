@@ -56,11 +56,11 @@
     <Compile Include="Order.cs" />
     <Compile Include="OrderDL.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="registration.cs">
+    <Compile Include="registrationfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registration.Designer.cs">
-      <DependentUpon>registration.cs</DependentUpon>
+    <Compile Include="registrationfrm.Designer.cs">
+      <DependentUpon>registrationfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Shoppingcart.cs" />
     <Compile Include="User DL.cs" />
@@ -80,10 +80,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="registration.resx">
-      <DependentUpon>registration.cs</DependentUpon>
+    <EmbeddedResource Include="registrationfrm.resx">
+      <DependentUpon>registrationfrm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,7 +97,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Main-Dish.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-food.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
