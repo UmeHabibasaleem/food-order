@@ -10,7 +10,7 @@ namespace Domain_Models
     {
 
         public static List<Product> items = new List<Product>();
-        void addItems(Product t);
-        void deleteItems(Product t);
+        //void addItems(Product t);
+        //void deleteItems(Product t);
     }
 }

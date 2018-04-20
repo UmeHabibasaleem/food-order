@@ -10,7 +10,7 @@ namespace Domain_Models
     {
 
         public static List<Employee> employee = new List<Employee>();
-        void addemployee(Employee e1);
-        void deleteemployee(Employee e1);
+       // void addemployee(Employee e1);
+       // void deleteemployee(Employee e1);
     }
 }

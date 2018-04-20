@@ -16,7 +16,6 @@ namespace Domain_Models
             get { return Username; }
             set { Username = value; }
         }
-
         private string password;
 
         public string Password
