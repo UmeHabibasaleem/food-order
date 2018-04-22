@@ -23,5 +23,12 @@ namespace Domain_Models
             this.Hide();
             frm.Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }
     }
 }

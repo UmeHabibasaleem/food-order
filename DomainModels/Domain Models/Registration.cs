@@ -19,23 +19,24 @@ namespace Domain_Models
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserInformation u1 = new UserInformation();
-            u1.username = textBox1.Text;
-            u1.Password = textBox2.Text;
-            u1.Phoneno = textBox3.Text;
-            u1.Email = textBox4.Text;
-            u1.homeAddress = textBox5.Text;
-            u1.Pincode = textBox6.Text;
-            User_DL d1 = new User_DL();
-            if (d1.searchuser(u1) == true)
-            {
-                MessageBox.Show("User already has been registered");
-            }
-            else
-            {
-                MessageBox.Show("User has been registered");
-                d1.Adduser(u1);
-            }
+            localhost.Service1 server = new localhost.Service1();
+            server.registerUser(textBox1.Text, textBox2.Text,textBox3.Text,textBox4.Text,textBox5.Text,textBox6.Text);
+
+            MessageBox.Show("User register");
+            textBox1.Text = " ";
+            textBox2.Text = " ";
+            textBox3.Text = " ";
+            textBox4.Text = " ";
+            textBox5.Text = " ";
+            textBox6.Text = " ";
+          
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
         }
     }
 }

@@ -29,3 +29,14 @@ C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registratio
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.exe
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe.config
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.exe
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.pdb
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csprojResolveAssemblyReference.cache
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+C:\Users\saif\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources

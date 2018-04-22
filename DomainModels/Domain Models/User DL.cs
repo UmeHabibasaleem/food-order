@@ -12,7 +12,6 @@ namespace Domain_Models
         public static List<UserInformation> user = new List<UserInformation>();
         public  void Adduser(UserInformation u1)
         {
-           // UserInformation user = new UserInformation();
             user.Add(u1);
         }
         public bool searchuser(UserInformation u1)

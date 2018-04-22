@@ -47,7 +47,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Domain_Models.Properties.Resources.fast_food;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(815, 403);
             this.pictureBox1.TabIndex = 1;
@@ -56,7 +56,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(702, 458);
+            this.linkLabel1.Location = new System.Drawing.Point(703, 475);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(108, 13);
             this.linkLabel1.TabIndex = 2;
@@ -67,12 +67,13 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(82, 457);
+            this.linkLabel2.Location = new System.Drawing.Point(83, 475);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(33, 13);
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Login";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // mainpage
             // 
