@@ -56,11 +56,16 @@
     <Compile Include="Order.cs" />
     <Compile Include="OrderDL.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="registrationfrm.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registrationfrm.Designer.cs">
-      <DependentUpon>registrationfrm.cs</DependentUpon>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
     <Compile Include="Shoppingcart.cs" />
     <Compile Include="User DL.cs" />
@@ -72,16 +77,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="registrationfrm.resx">
-      <DependentUpon>registrationfrm.cs</DependentUpon>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

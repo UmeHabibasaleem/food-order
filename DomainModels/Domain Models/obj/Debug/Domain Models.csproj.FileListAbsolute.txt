@@ -19,3 +19,13 @@ C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Mo
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.registrationfrm.resources
+C:\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe.config
+C:\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe
+C:\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.pdb
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csprojResolveAssemblyReference.cache
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.exe
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
