@@ -1,0 +1,20 @@
+c:\users\abubakar\documents\visual studio 2012\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+c:\users\abubakar\documents\visual studio 2012\Projects\WcfService1\WcfService1\bin\WcfService1.dll
+c:\users\abubakar\documents\visual studio 2012\Projects\WcfService1\WcfService1\bin\WcfService1.pdb
+c:\users\abubakar\documents\visual studio 2012\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+c:\users\abubakar\documents\visual studio 2012\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+G:\WcfService1\WcfService1\bin\WcfService1.dll
+G:\WcfService1\WcfService1\bin\WcfService1.pdb
+G:\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+G:\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+G:\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+I:\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+I:\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+I:\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+I:\WcfService1\WcfService1\bin\WcfService1.dll
+I:\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\bin\WcfService1.pdb
