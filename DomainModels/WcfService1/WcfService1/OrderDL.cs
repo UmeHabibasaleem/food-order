@@ -10,7 +10,7 @@ namespace Domain_Models
     {
 
         public static List<Order> Order = new List<Order>();
-        // void confirmOrder();
-        // void deleteOrder();
+        //void confirmOrder();
+        //void deleteOrder();
     }
 }

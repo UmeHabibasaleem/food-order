@@ -18,3 +18,8 @@ C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\obj\Debug\WcfService1.d
 C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
 C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\bin\WcfService1.dll
 C:\Users\saif\Desktop\food-order\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\Administrator\Desktop\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\Administrator\Desktop\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\Administrator\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Administrator\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
