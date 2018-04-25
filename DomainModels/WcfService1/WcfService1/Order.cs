@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Domain_Models
+namespace WcfService1
 {
-    class Order
+    public class Order
     {
-
         public string date;
-        public string Number;
+        public string number;
     }
 }

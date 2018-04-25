@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Domain_Models
+namespace WcfService1
 {
-    class Product
+    public class Product
     {
-
         public int id;
         public string name;
         public string category;

@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Domain_Models
+namespace WcfService1
 {
-    class EmployeeDL
+    public class EmployeeDL
     {
-
         public static List<Employee> employee = new List<Employee>();
         //void addemployee(Employee e1);
         //void deleteemployee(Employee e1);
