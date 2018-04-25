@@ -12,11 +12,13 @@ namespace WcfService1
     [ServiceContract]
     public interface IService1
     {
-        [OperationContract]
-        void registerUser(string userName, string Password, string phoneno, string email, string homeaddress, string pincode);
+        
 
         [OperationContract]
         bool isValidUser(string userName, string Password);
+
+        [OperationContract]
+        void enteritems(string productName, string catagory, string id, string ima);
 
         [OperationContract]
         string GetData(int value);

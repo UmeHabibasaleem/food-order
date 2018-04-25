@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Domain_Models
+namespace WcfService1
 {
-    class Shoppingcart
+    public class Shoppingcart
     {
-
         public static List<Product> items = new List<Product>();
-        //void addItems(Product t);
+        
+        public void addItems(Product t)
+        {
+            items.Add(t);
+        }
+
         //void deleteItems(Product t);
     }
 }

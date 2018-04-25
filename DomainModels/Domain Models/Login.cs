@@ -34,5 +34,14 @@ namespace Domain_Models
             txtUsername.Text = " ";
             txtpassword.Text = " ";
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            txtUsername.Text = " ";
+            txtpassword.Text = " ";
+            cmdAdminpage admin = new cmdAdminpage();
+            this.Hide();
+            admin.Show();
+        }
     }
 }

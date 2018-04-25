@@ -31,15 +31,7 @@ namespace WcfService1
         }
         public void registerUser(string userName, string Password ,string phoneno, string email, string homeaddress,string pincode)
         {
-            UserInformation user = new UserInformation();
-            user.username = userName;
-            user.Password = Password;
-            user.Phoneno = phoneno;
-            user.Email = email;
-            user.homeAddress = homeaddress;
-            user.Pincode = pincode;
-            User_DL d1 = new User_DL();
-            d1.Adduser(user);
+          
         }
         public bool isValidUser(string userName, string Password)
         {
@@ -57,6 +49,16 @@ namespace WcfService1
                 exist = false;
             }
             return exist;
+        }
+        public void enteritems(string productName, string catagory, string id, string ima)
+        {
+            Product item = new Product();
+            item.name = productName;
+            item.id = id;
+            item.category = catagory;
+            item.image = ima;
+            Shoppingcart cart = new Shoppingcart();
+            cart.addItems(item);
         }
 
     }

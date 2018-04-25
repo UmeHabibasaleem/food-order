@@ -51,3 +51,14 @@ C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\D
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\bin\Debug\Domain Models.exe.config
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain Models.exe
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain Models.csprojResolveAssemblyReference.cache
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Additems.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
+E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache

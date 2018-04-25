@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Domain_Models
+namespace WcfService1
 {
-    class OrderDL
+    public class OrderDL
     {
-
         public static List<Order> Order = new List<Order>();
         //void confirmOrder();
         //void deleteOrder();

@@ -10,24 +10,18 @@ using System.Windows.Forms;
 
 namespace Domain_Models
 {
-    public partial class Registration : Form
+    public partial class cmdAdminpage : Form
     {
-        public Registration()
+        public cmdAdminpage()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtAddItems_Click(object sender, EventArgs e)
         {
-            
-          
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Login log = new Login();
+            Additems items = new Additems();
             this.Hide();
-            log.Show();
+            items.Show();
         }
     }
 }
