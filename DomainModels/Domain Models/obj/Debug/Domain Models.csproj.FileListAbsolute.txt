@@ -62,3 +62,7 @@ E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Dom
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Additems.resources
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
+C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources

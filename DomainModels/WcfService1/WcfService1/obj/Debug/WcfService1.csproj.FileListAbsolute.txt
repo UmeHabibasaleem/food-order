@@ -28,3 +28,8 @@ E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\Wcf
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.dll
 E:\Users\AbuBakar\Downloads\food-order-master\food-order-master\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\Ahmad\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Ahmad\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Ahmad\Desktop\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\Ahmad\Desktop\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\Ahmad\Desktop\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.pdb

@@ -19,7 +19,18 @@ namespace Domain_Models
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+        
+            localhost.Service1 server = new localhost.Service1();
+            server.registerUser(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
+             textBox1.Text = "";
+             textBox2.Text = "";
+             textBox3.Text = "";
+             textBox4.Text = "";
+             textBox5.Text = "";
+             textBox6.Text = "";
+            MessageBox.Show("user has been registered");
+
+
           
         }
 

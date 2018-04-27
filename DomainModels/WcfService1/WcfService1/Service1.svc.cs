@@ -31,7 +31,15 @@ namespace WcfService1
         }
         public void registerUser(string userName, string Password ,string phoneno, string email, string homeaddress,string pincode)
         {
-          
+            UserInformation u1 = new UserInformation();
+            u1.username = userName;
+            u1.Password = Password;
+            u1.Phoneno = phoneno;
+            u1.Email = email;
+            u1.homeAddress = homeaddress;
+            u1.Pincode = pincode;
+            User_DL d1 = new User_DL();
+            d1.Adduser(u1);
         }
         public bool isValidUser(string userName, string Password)
         {
