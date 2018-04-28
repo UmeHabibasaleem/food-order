@@ -66,3 +66,6 @@ C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Mo
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
 C:\Users\Ahmad\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
+C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Additems.resources
+C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
+C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Form1.resources
