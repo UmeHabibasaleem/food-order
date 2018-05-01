@@ -22,6 +22,12 @@ namespace WcfService1
         void enteritems(string productName, string catagory, string id, string ima);
 
         [OperationContract]
+        Product searchitems(int i);
+
+        [OperationContract]
+        int getlengthofarray(); 
+
+        [OperationContract]
         string GetData(int value);
 
         [OperationContract]

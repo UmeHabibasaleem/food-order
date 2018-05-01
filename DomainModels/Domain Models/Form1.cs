@@ -19,8 +19,23 @@ namespace Domain_Models
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add();
-
+            localhost.Service1 server = new localhost.Service1();
+            int y;
+            bool b;
+            bool c = true;
+            int i; 
+            server.getlengthofarray(out y, out b); 
+            for (int j = 0; j < y; j++)
+            {
+                int a = j;
+                server.searchitems(int j);
+                Product t = new Product();
+                t = server.searchitems(int j);
+                t.name =                 
+                t.category =
+                t.id =
+                t.price =
+            }
 
         }
     }

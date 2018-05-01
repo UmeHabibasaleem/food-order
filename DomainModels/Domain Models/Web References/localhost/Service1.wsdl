@@ -19,6 +19,24 @@
   <wsdl:message name="IService1_isValidUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:isValidUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_enteritems_InputMessage">
+    <wsdl:part name="parameters" element="tns:enteritems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_enteritems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enteritemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_searchitems_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchitems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_searchitems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchitemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getlengthofarray_InputMessage">
+    <wsdl:part name="parameters" element="tns:getlengthofarray" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getlengthofarray_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getlengthofarrayResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
   </wsdl:message>
@@ -39,6 +57,18 @@
     <wsdl:operation name="isValidUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/isValidUser" message="tns:IService1_isValidUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/isValidUserResponse" message="tns:IService1_isValidUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enteritems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/enteritems" message="tns:IService1_enteritems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/enteritemsResponse" message="tns:IService1_enteritems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchitems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/searchitems" message="tns:IService1_searchitems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/searchitemsResponse" message="tns:IService1_searchitems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getlengthofarray">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getlengthofarray" message="tns:IService1_getlengthofarray_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getlengthofarrayResponse" message="tns:IService1_getlengthofarray_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -62,6 +92,33 @@
     </wsdl:operation>
     <wsdl:operation name="isValidUser">
       <soap:operation soapAction="http://tempuri.org/IService1/isValidUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enteritems">
+      <soap:operation soapAction="http://tempuri.org/IService1/enteritems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchitems">
+      <soap:operation soapAction="http://tempuri.org/IService1/searchitems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlengthofarray">
+      <soap:operation soapAction="http://tempuri.org/IService1/getlengthofarray" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

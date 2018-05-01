@@ -26,11 +26,11 @@ namespace Domain_Models
             txtid.Text = " ";
             txtimage.Text = " ";
 
-            int n = dataGridView1.Rows.Add();
+            /*int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = txtitemname.Text;
             dataGridView1.Rows[n].Cells[1].Value = txtid.Text;
             dataGridView1.Rows[n].Cells[2].Value = txtcategory.Text;
-            dataGridView1.Rows[n].Cells[3].Value = txtprice.Text;
+            dataGridView1.Rows[n].Cells[3].Value = txtprice.Text;*/
 
         }
 

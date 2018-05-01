@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Additems));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,18 +40,13 @@
             this.cmdadd = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtprice = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(328, 26);
+            this.label3.Location = new System.Drawing.Point(24, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 12;
@@ -59,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 27);
+            this.label2.Location = new System.Drawing.Point(39, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 13);
             this.label2.TabIndex = 11;
@@ -76,14 +72,14 @@
             // 
             // txtcategory
             // 
-            this.txtcategory.Location = new System.Drawing.Point(382, 23);
+            this.txtcategory.Location = new System.Drawing.Point(86, 124);
             this.txtcategory.Name = "txtcategory";
             this.txtcategory.Size = new System.Drawing.Size(100, 20);
             this.txtcategory.TabIndex = 9;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(222, 23);
+            this.txtid.Location = new System.Drawing.Point(86, 72);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(100, 20);
             this.txtid.TabIndex = 8;
@@ -97,7 +93,7 @@
             // 
             // txtimage
             // 
-            this.txtimage.Location = new System.Drawing.Point(529, 24);
+            this.txtimage.Location = new System.Drawing.Point(86, 186);
             this.txtimage.Name = "txtimage";
             this.txtimage.Size = new System.Drawing.Size(100, 20);
             this.txtimage.TabIndex = 13;
@@ -105,7 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(488, 26);
+            this.label4.Location = new System.Drawing.Point(24, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 14;
@@ -113,18 +109,18 @@
             // 
             // cmdadd
             // 
-            this.cmdadd.Location = new System.Drawing.Point(653, 80);
+            this.cmdadd.Location = new System.Drawing.Point(42, 291);
             this.cmdadd.Name = "cmdadd";
             this.cmdadd.Size = new System.Drawing.Size(75, 23);
             this.cmdadd.TabIndex = 15;
-            this.cmdadd.Text = "ADD";
+            this.cmdadd.Text = resources.GetString("cmdadd.Text");
             this.cmdadd.UseVisualStyleBackColor = true;
             this.cmdadd.Click += new System.EventHandler(this.cmdadd_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(650, 30);
+            this.label5.Location = new System.Drawing.Point(24, 245);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 16;
@@ -132,52 +128,27 @@
             // 
             // txtprice
             // 
-            this.txtprice.Location = new System.Drawing.Point(687, 23);
+            this.txtprice.Location = new System.Drawing.Point(86, 245);
             this.txtprice.Name = "txtprice";
             this.txtprice.Size = new System.Drawing.Size(100, 20);
             this.txtprice.TabIndex = 17;
             // 
-            // dataGridView1
+            // linkLabel1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(138, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(471, 150);
-            this.dataGridView1.TabIndex = 18;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "ITEM NAME";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ID";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "CATEGORY";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "PRICE";
-            this.Column4.Name = "Column4";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(187, 301);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(53, 13);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Info Page";
             // 
             // Additems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 337);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtprice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmdadd);
@@ -192,7 +163,6 @@
             this.Name = "Additems";
             this.Text = "Additems";
             this.Load += new System.EventHandler(this.Additems_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,10 +181,6 @@
         private System.Windows.Forms.Button cmdadd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtprice;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

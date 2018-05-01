@@ -68,6 +68,25 @@ namespace WcfService1
             Shoppingcart cart = new Shoppingcart();
             cart.addItems(item);
         }
+        public Product searchitems(int i)
+        {
+            Product l = new Product();
+            Shoppingcart u = new Shoppingcart();
+            l = u.searchitems(i);
+            return l;
+        }
+        public int getlengthofarray()
+        {
+            Shoppingcart t = new Shoppingcart();
+            int y = t.lengthofarray();
+            return y;
+        }
+ 
 
+                
     }
 }
+
+
+
+
