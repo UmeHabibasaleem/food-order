@@ -58,6 +58,12 @@
     <Compile Include="Adminpage.Designer.cs">
       <DependentUpon>Adminpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteitem.Designer.cs">
+      <DependentUpon>deleteitem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Adminpage.resx">
       <DependentUpon>Adminpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteitem.resx">
+      <DependentUpon>deleteitem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

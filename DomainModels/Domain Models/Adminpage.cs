@@ -23,5 +23,12 @@ namespace Domain_Models
             this.Hide();
             items.Show();
         }
+
+        private void cmdRemove_Click(object sender, EventArgs e)
+        {
+            deleteitem d1 = new deleteitem();
+            this.Hide();
+            d1.Show();
+        }
     }
 }

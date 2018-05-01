@@ -24,6 +24,10 @@ namespace WcfService1
         [OperationContract]
         Product searchitems(int i);
 
+
+         [OperationContract]
+        void deleteitems(string productName, string catagory, string id, string image);
+
         [OperationContract]
         int getlengthofarray(); 
 

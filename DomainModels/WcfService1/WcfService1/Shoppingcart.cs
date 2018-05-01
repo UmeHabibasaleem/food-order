@@ -19,6 +19,14 @@ namespace WcfService1
             Product t1 = Shoppingcart.items[i];
             return t1;
         }
+        public void deleteItems(Product t)
+        {
+            items.Remove(t);
+        }
+
+
+
+
 
         //void deleteItems(Product t);
 

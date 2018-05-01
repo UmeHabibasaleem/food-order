@@ -81,6 +81,32 @@ namespace WcfService1
             int y = t.lengthofarray();
             return y;
         }
+
+
+        public void deleteitems(string productName, string catagory, string id, string image)
+        {
+
+            Shoppingcart cart = new Shoppingcart();
+            foreach (Product item12 in Shoppingcart.items)
+            {
+                if (item12.name == productName && item12.category == catagory && item12.id == id)
+                {
+                    cart.deleteItems(item12);
+                }
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
  
 
                 

@@ -50,6 +50,7 @@
             this.cmdRemove.TabIndex = 4;
             this.cmdRemove.Text = "Romove items";
             this.cmdRemove.UseVisualStyleBackColor = true;
+            this.cmdRemove.Click += new System.EventHandler(this.cmdRemove_Click);
             // 
             // txtAddItems
             // 
