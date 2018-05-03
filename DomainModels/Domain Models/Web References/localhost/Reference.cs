@@ -35,9 +35,9 @@ namespace Domain_Models.localhost {
         
         private System.Threading.SendOrPostCallback enteritemsOperationCompleted;
         
-        private System.Threading.SendOrPostCallback searchitemsOperationCompleted;
+        private System.Threading.SendOrPostCallback ShowproductOperationCompleted;
         
-        private System.Threading.SendOrPostCallback getlengthofarrayOperationCompleted;
+        private System.Threading.SendOrPostCallback deleteitemsOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
         
@@ -91,10 +91,10 @@ namespace Domain_Models.localhost {
         public event enteritemsCompletedEventHandler enteritemsCompleted;
         
         /// <remarks/>
-        public event searchitemsCompletedEventHandler searchitemsCompleted;
+        public event ShowproductCompletedEventHandler ShowproductCompleted;
         
         /// <remarks/>
-        public event getlengthofarrayCompletedEventHandler getlengthofarrayCompleted;
+        public event deleteitemsCompletedEventHandler deleteitemsCompleted;
         
         /// <remarks/>
         public event GetDataCompletedEventHandler GetDataCompleted;
@@ -207,62 +207,65 @@ namespace Domain_Models.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/searchitems", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Product searchitems(int i, [System.Xml.Serialization.XmlIgnoreAttribute()] bool iSpecified) {
-            object[] results = this.Invoke("searchitems", new object[] {
-                        i,
-                        iSpecified});
-            return ((Product)(results[0]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Showproduct", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
+        public Product[] Showproduct() {
+            object[] results = this.Invoke("Showproduct", new object[0]);
+            return ((Product[])(results[0]));
         }
         
         /// <remarks/>
-        public void searchitemsAsync(int i, bool iSpecified) {
-            this.searchitemsAsync(i, iSpecified, null);
+        public void ShowproductAsync() {
+            this.ShowproductAsync(null);
         }
         
         /// <remarks/>
-        public void searchitemsAsync(int i, bool iSpecified, object userState) {
-            if ((this.searchitemsOperationCompleted == null)) {
-                this.searchitemsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnsearchitemsOperationCompleted);
+        public void ShowproductAsync(object userState) {
+            if ((this.ShowproductOperationCompleted == null)) {
+                this.ShowproductOperationCompleted = new System.Threading.SendOrPostCallback(this.OnShowproductOperationCompleted);
             }
-            this.InvokeAsync("searchitems", new object[] {
-                        i,
-                        iSpecified}, this.searchitemsOperationCompleted, userState);
+            this.InvokeAsync("Showproduct", new object[0], this.ShowproductOperationCompleted, userState);
         }
         
-        private void OnsearchitemsOperationCompleted(object arg) {
-            if ((this.searchitemsCompleted != null)) {
+        private void OnShowproductOperationCompleted(object arg) {
+            if ((this.ShowproductCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.searchitemsCompleted(this, new searchitemsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.ShowproductCompleted(this, new ShowproductCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/getlengthofarray", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void getlengthofarray(out int getlengthofarrayResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool getlengthofarrayResultSpecified) {
-            object[] results = this.Invoke("getlengthofarray", new object[0]);
-            getlengthofarrayResult = ((int)(results[0]));
-            getlengthofarrayResultSpecified = ((bool)(results[1]));
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/deleteitems", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void deleteitems([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string productName, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string catagory, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string id, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string image) {
+            this.Invoke("deleteitems", new object[] {
+                        productName,
+                        catagory,
+                        id,
+                        image});
         }
         
         /// <remarks/>
-        public void getlengthofarrayAsync() {
-            this.getlengthofarrayAsync(null);
+        public void deleteitemsAsync(string productName, string catagory, string id, string image) {
+            this.deleteitemsAsync(productName, catagory, id, image, null);
         }
         
         /// <remarks/>
-        public void getlengthofarrayAsync(object userState) {
-            if ((this.getlengthofarrayOperationCompleted == null)) {
-                this.getlengthofarrayOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetlengthofarrayOperationCompleted);
+        public void deleteitemsAsync(string productName, string catagory, string id, string image, object userState) {
+            if ((this.deleteitemsOperationCompleted == null)) {
+                this.deleteitemsOperationCompleted = new System.Threading.SendOrPostCallback(this.OndeleteitemsOperationCompleted);
             }
-            this.InvokeAsync("getlengthofarray", new object[0], this.getlengthofarrayOperationCompleted, userState);
+            this.InvokeAsync("deleteitems", new object[] {
+                        productName,
+                        catagory,
+                        id,
+                        image}, this.deleteitemsOperationCompleted, userState);
         }
         
-        private void OngetlengthofarrayOperationCompleted(object arg) {
-            if ((this.getlengthofarrayCompleted != null)) {
+        private void OndeleteitemsOperationCompleted(object arg) {
+            if ((this.deleteitemsCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.getlengthofarrayCompleted(this, new getlengthofarrayCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.deleteitemsCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -363,6 +366,8 @@ namespace Domain_Models.localhost {
         
         private string nameField;
         
+        private string priceField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string category {
@@ -404,6 +409,17 @@ namespace Domain_Models.localhost {
             }
             set {
                 this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string price {
+            get {
+                return this.priceField;
+            }
+            set {
+                this.priceField = value;
             }
         }
     }
@@ -499,63 +515,33 @@ namespace Domain_Models.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
-    public delegate void searchitemsCompletedEventHandler(object sender, searchitemsCompletedEventArgs e);
+    public delegate void ShowproductCompletedEventHandler(object sender, ShowproductCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class searchitemsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class ShowproductCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        internal searchitemsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        internal ShowproductCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
         
         /// <remarks/>
-        public Product Result {
+        public Product[] Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((Product)(this.results[0]));
+                return ((Product[])(this.results[0]));
             }
         }
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
-    public delegate void getlengthofarrayCompletedEventHandler(object sender, getlengthofarrayCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class getlengthofarrayCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal getlengthofarrayCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int getlengthofarrayResult {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public bool getlengthofarrayResultSpecified {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
-            }
-        }
-    }
+    public delegate void deleteitemsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]

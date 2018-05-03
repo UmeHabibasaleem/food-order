@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Domain_Models
 {
-    public partial class Form1 : Form
+    public partial class Infopage : Form
     {
-        public Form1()
+        public Infopage()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace Domain_Models
         private void button1_Click(object sender, EventArgs e)
         {
             localhost.Service1 server = new localhost.Service1();
+            BindingSource source = new BindingSource();
+            server.Showproduct();
+            source.DataSource = server.Showproduct();
+            dataGridView1.DataSource = source;
+
+            /*localhost.Service1 server = new localhost.Service1();
             int y;
             bool b;
             bool c = true;
@@ -35,8 +41,15 @@ namespace Domain_Models
                 t.category =
                 t.id =
                 t.price =
-            }
+            }*/
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cmdAdminpage d1 = new cmdAdminpage();
+            this.Hide();
+            d1.Show();
         }
     }
 }

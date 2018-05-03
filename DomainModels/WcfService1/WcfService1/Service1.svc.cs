@@ -68,7 +68,13 @@ namespace WcfService1
             Shoppingcart cart = new Shoppingcart();
             cart.addItems(item);
         }
-        public Product searchitems(int i)
+        public List<Product> Showproduct()
+        {
+            return Shoppingcart.items;
+        }
+
+
+        /*public Product searchitems(int i)
         {
             Product l = new Product();
             Shoppingcart u = new Shoppingcart();
@@ -80,7 +86,7 @@ namespace WcfService1
             Shoppingcart t = new Shoppingcart();
             int y = t.lengthofarray();
             return y;
-        }
+        }*/
 
 
         public void deleteitems(string productName, string catagory, string id, string image)

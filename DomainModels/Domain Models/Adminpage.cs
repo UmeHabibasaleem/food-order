@@ -30,5 +30,12 @@ namespace Domain_Models
             this.Hide();
             d1.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Infopage f = new Infopage();
+            this.Hide();
+            f.Show();
+        }
     }
 }

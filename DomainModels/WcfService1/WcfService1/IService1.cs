@@ -18,18 +18,22 @@ namespace WcfService1
         [OperationContract]
         bool isValidUser(string userName, string Password);
 
+        
         [OperationContract]
         void enteritems(string productName, string catagory, string id, string ima);
 
         [OperationContract]
-        Product searchitems(int i);
+        List<Product> Showproduct();
+
+        /*[OperationContract]
+        Product searchitems(int i);*/
 
 
          [OperationContract]
         void deleteitems(string productName, string catagory, string id, string image);
 
-        [OperationContract]
-        int getlengthofarray(); 
+        /*[OperationContract]
+        int getlengthofarray();*/ 
 
         [OperationContract]
         string GetData(int value);

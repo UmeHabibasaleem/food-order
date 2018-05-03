@@ -35,30 +35,31 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(146, 182);
+            this.button3.Location = new System.Drawing.Point(133, 195);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 58);
             this.button3.TabIndex = 5;
             this.button3.Text = "Information";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // cmdRemove
             // 
-            this.cmdRemove.Location = new System.Drawing.Point(146, 114);
+            this.cmdRemove.Location = new System.Drawing.Point(133, 114);
             this.cmdRemove.Name = "cmdRemove";
             this.cmdRemove.Size = new System.Drawing.Size(160, 51);
             this.cmdRemove.TabIndex = 4;
-            this.cmdRemove.Text = "Romove items";
+            this.cmdRemove.Text = "Romove Items";
             this.cmdRemove.UseVisualStyleBackColor = true;
             this.cmdRemove.Click += new System.EventHandler(this.cmdRemove_Click);
             // 
             // txtAddItems
             // 
-            this.txtAddItems.Location = new System.Drawing.Point(146, 41);
+            this.txtAddItems.Location = new System.Drawing.Point(133, 28);
             this.txtAddItems.Name = "txtAddItems";
             this.txtAddItems.Size = new System.Drawing.Size(160, 53);
             this.txtAddItems.TabIndex = 3;
-            this.txtAddItems.Text = "AddItems";
+            this.txtAddItems.Text = "Add Items";
             this.txtAddItems.UseVisualStyleBackColor = true;
             this.txtAddItems.Click += new System.EventHandler(this.txtAddItems_Click);
             // 

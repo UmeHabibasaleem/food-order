@@ -38,5 +38,12 @@ namespace Domain_Models
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Infopage f = new Infopage();
+            this.Hide();
+            f.Show();
+        }
     }
 }
