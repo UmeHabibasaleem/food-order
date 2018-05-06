@@ -25,13 +25,20 @@ namespace Domain_Models
             txtcategory.Text = " ";
             txtid.Text = " ";
             txtimage.Text = " ";
+            textBox1.Text = " ";
+            
         }
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            Adminpage d1 = new Adminpage();
+            cmdAdminpage d1 = new cmdAdminpage();
             this.Hide();
             d1.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

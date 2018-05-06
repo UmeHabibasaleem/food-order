@@ -30,7 +30,7 @@ namespace WcfService1
 
 
          [OperationContract]
-        void deleteitems(string productName, string catagory, string id, string image);
+        void deleteitems(string productName, string catagory, string id, string image , string pri);
 
         /*[OperationContract]
         int getlengthofarray();*/ 

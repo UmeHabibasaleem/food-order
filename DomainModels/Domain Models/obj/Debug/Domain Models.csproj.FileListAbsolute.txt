@@ -70,3 +70,8 @@ C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\D
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.deleteitem.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Infopage.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Additems.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.deleteitem.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Infopage.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
