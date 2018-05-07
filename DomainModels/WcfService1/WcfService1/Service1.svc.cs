@@ -61,10 +61,10 @@ namespace WcfService1
         public void enteritems(string productName, string catagory, string id, string ima)
         {
             Product item = new Product();
-            item.name = productName;
-            item.id = id;
-            item.category = catagory;
-            item.image = ima;
+            item.Name = productName;
+            item.Id = id;
+            item.Category = catagory;
+            item.Image = ima;
             Shoppingcart cart = new Shoppingcart();
             cart.addItems(item);
         }
@@ -95,7 +95,7 @@ namespace WcfService1
             Shoppingcart cart = new Shoppingcart();
             foreach (Product item12 in Shoppingcart.items.ToArray())
             {
-                if (item12.name == productName && item12.category == catagory && item12.id == id)
+                if (item12.Name == productName && item12.Category == catagory && item12.Id == id)
                 {
                     cart.deleteItems(item12);
                 }

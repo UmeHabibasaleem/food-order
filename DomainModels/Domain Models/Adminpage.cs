@@ -37,5 +37,12 @@ namespace Domain_Models
             this.Hide();
             f.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            User_food_list f = new User_food_list();
+            this.Hide();
+            f.Show();
+        }
     }
 }

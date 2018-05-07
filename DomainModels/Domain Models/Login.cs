@@ -26,6 +26,9 @@ namespace Domain_Models
             if (isvaliduser)
             {
                 MessageBox.Show("valid user");
+                User_food_list f = new User_food_list();
+                this.Hide();
+                f.Show();
             }
             else
             {
@@ -42,6 +45,11 @@ namespace Domain_Models
             cmdAdminpage admin = new cmdAdminpage();
             this.Hide();
             admin.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
