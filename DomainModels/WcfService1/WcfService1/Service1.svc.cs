@@ -72,6 +72,10 @@ namespace WcfService1
         {
             return Shoppingcart.items;
         }
+        public List<UserProduct> ShowUserProduct()
+        {
+            return UserSelectedItems.useritems;
+        }
 
 
         /*public Product searchitems(int i)

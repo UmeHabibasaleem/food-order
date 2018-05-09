@@ -25,6 +25,9 @@ namespace WcfService1
         [OperationContract]
         List<Product> Showproduct();
 
+        [OperationContract]
+        List<UserProduct> ShowUserProduct();
+
         /*[OperationContract]
         Product searchitems(int i);*/
 

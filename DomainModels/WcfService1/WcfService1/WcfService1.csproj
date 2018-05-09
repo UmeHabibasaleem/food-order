@@ -77,6 +77,8 @@
     <Compile Include="Shoppingcart.cs" />
     <Compile Include="User DL.cs" />
     <Compile Include="UserInformation.cs" />
+    <Compile Include="UserProduct.cs" />
+    <Compile Include="UserSelectedItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

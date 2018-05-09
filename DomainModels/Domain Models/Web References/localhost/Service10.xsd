@@ -33,18 +33,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="show_in_list">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="show_in_listResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="show_in_listResult" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="enteritems">
     <xs:complexType>
       <xs:sequence>
@@ -72,17 +60,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="searchitems">
+  <xs:element name="ShowUserProduct">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="i" type="xs:int" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="searchitemsResponse">
+  <xs:element name="ShowUserProductResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="searchitemsResult" nillable="true" type="q2:Product" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="ShowUserProductResult" nillable="true" type="q2:ArrayOfUserProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -93,24 +79,13 @@
         <xs:element minOccurs="0" name="catagory" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pri" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="deleteitemsResponse">
     <xs:complexType>
       <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="getlengthofarray">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="getlengthofarrayResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="getlengthofarrayResult" type="xs:int" />
-      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetData">

@@ -76,3 +76,5 @@ C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.deleteitem.
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Infopage.resources
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.User_food_list.resources
+C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.MyOrder.resources
+C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.User_food_list.resources
