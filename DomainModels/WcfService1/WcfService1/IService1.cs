@@ -28,6 +28,10 @@ namespace WcfService1
         [OperationContract]
         List<UserProduct> ShowUserProduct();
 
+        [OperationContract]
+        void Useritems(string productName, string price, string id);
+
+
         /*[OperationContract]
         Product searchitems(int i);*/
 

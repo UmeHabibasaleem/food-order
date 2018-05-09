@@ -37,6 +37,12 @@
   <wsdl:message name="IService1_ShowUserProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowUserProductResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_Useritems_InputMessage">
+    <wsdl:part name="parameters" element="tns:Useritems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Useritems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UseritemsResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_deleteitems_InputMessage">
     <wsdl:part name="parameters" element="tns:deleteitems" />
   </wsdl:message>
@@ -75,6 +81,10 @@
     <wsdl:operation name="ShowUserProduct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowUserProduct" message="tns:IService1_ShowUserProduct_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowUserProductResponse" message="tns:IService1_ShowUserProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Useritems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Useritems" message="tns:IService1_Useritems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UseritemsResponse" message="tns:IService1_Useritems_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="deleteitems">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteitems" message="tns:IService1_deleteitems_InputMessage" />
@@ -129,6 +139,15 @@
     </wsdl:operation>
     <wsdl:operation name="ShowUserProduct">
       <soap:operation soapAction="http://tempuri.org/IService1/ShowUserProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Useritems">
+      <soap:operation soapAction="http://tempuri.org/IService1/Useritems" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

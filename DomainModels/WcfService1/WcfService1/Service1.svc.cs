@@ -76,6 +76,15 @@ namespace WcfService1
         {
             return UserSelectedItems.useritems;
         }
+        public void Useritems(string productName, string price, string id)
+        {
+            UserProduct item = new UserProduct();
+            item.Name = productName;
+            item.Id = id;
+            item.Price = price;
+            UserSelectedItems user = new UserSelectedItems();
+            user.useradditems(item);
+        }
 
 
         /*public Product searchitems(int i)

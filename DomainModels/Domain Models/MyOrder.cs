@@ -25,5 +25,10 @@ namespace Domain_Models
             source.DataSource = server.ShowUserProduct();
             dataGridView1.DataSource = source;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,13 @@ namespace Domain_Models
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int index = e.RowIndex;
+            DataGridViewRow selected_row = dataGridView1.Rows[index];
+            localhost.Service1 server = new localhost.Service1();
+            string a = selected_row.Cells[4].Value.ToString();
+            string b = selected_row.Cells[5].Value.ToString();
+            string c = selected_row.Cells[2].Value.ToString();
+            server.Useritems(a, b, c);
 
         }
 
@@ -40,6 +47,20 @@ namespace Domain_Models
             server.Showproduct();
             source.DataSource = server.Showproduct();
             dataGridView1.DataSource = source;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MyOrder order = new MyOrder();
+            this.Hide();
+            order.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cmdAdminpage admin = new cmdAdminpage();
+            this.Hide();
+            admin.Show();
         }
     }
 }

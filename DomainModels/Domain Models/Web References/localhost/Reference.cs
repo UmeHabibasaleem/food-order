@@ -39,6 +39,8 @@ namespace Domain_Models.localhost {
         
         private System.Threading.SendOrPostCallback ShowUserProductOperationCompleted;
         
+        private System.Threading.SendOrPostCallback UseritemsOperationCompleted;
+        
         private System.Threading.SendOrPostCallback deleteitemsOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
@@ -97,6 +99,9 @@ namespace Domain_Models.localhost {
         
         /// <remarks/>
         public event ShowUserProductCompletedEventHandler ShowUserProductCompleted;
+        
+        /// <remarks/>
+        public event UseritemsCompletedEventHandler UseritemsCompleted;
         
         /// <remarks/>
         public event deleteitemsCompletedEventHandler deleteitemsCompleted;
@@ -266,6 +271,38 @@ namespace Domain_Models.localhost {
             if ((this.ShowUserProductCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.ShowUserProductCompleted(this, new ShowUserProductCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Useritems", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void Useritems([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string productName, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string price, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string id) {
+            this.Invoke("Useritems", new object[] {
+                        productName,
+                        price,
+                        id});
+        }
+        
+        /// <remarks/>
+        public void UseritemsAsync(string productName, string price, string id) {
+            this.UseritemsAsync(productName, price, id, null);
+        }
+        
+        /// <remarks/>
+        public void UseritemsAsync(string productName, string price, string id, object userState) {
+            if ((this.UseritemsOperationCompleted == null)) {
+                this.UseritemsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUseritemsOperationCompleted);
+            }
+            this.InvokeAsync("Useritems", new object[] {
+                        productName,
+                        price,
+                        id}, this.UseritemsOperationCompleted, userState);
+        }
+        
+        private void OnUseritemsOperationCompleted(object arg) {
+            if ((this.UseritemsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UseritemsCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -648,6 +685,10 @@ namespace Domain_Models.localhost {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    public delegate void UseritemsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
