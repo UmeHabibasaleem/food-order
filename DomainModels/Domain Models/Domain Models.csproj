@@ -58,6 +58,12 @@
     <Compile Include="Adminpage.Designer.cs">
       <DependentUpon>Adminpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conform Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conform Order.Designer.cs">
+      <DependentUpon>Conform Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteitem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="MyOrder.Designer.cs">
       <DependentUpon>MyOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderList.Designer.cs">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +113,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRecord.Designer.cs">
+      <DependentUpon>UserRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_food_list.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,9 @@
     <EmbeddedResource Include="Adminpage.resx">
       <DependentUpon>Adminpage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Conform Order.resx">
+      <DependentUpon>Conform Order.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="deleteitem.resx">
       <DependentUpon>deleteitem.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +154,9 @@
     <EmbeddedResource Include="MyOrder.resx">
       <DependentUpon>MyOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderList.resx">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -140,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRecord.resx">
+      <DependentUpon>UserRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_food_list.resx">
       <DependentUpon>User_food_list.cs</DependentUpon>
@@ -154,6 +181,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Web References\localhost\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Order.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\localhost\Product.datasource">
@@ -172,6 +202,9 @@
     </None>
     <None Include="Web References\localhost\Service11.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost\UserInformation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\localhost\UserProduct.datasource">
       <DependentUpon>Reference.map</DependentUpon>

@@ -20,17 +20,12 @@ namespace Domain_Models
         private void cmdadd_Click(object sender, EventArgs e)
         {
             localhost.Service1 server = new localhost.Service1();
-            server.enteritems(txtitemname.Text, txtcategory.Text, txtid.Text, txtimage.Text);
+            server.enteritems(txtitemname.Text, txtcategory.Text, txtid.Text, txtimage.Text,txtprice.Text);
             txtitemname.Text = " ";
             txtcategory.Text = " ";
             txtid.Text = " ";
             txtimage.Text = " ";
-
-            /*int n = dataGridView1.Rows.Add();
-            dataGridView1.Rows[n].Cells[0].Value = txtitemname.Text;
-            dataGridView1.Rows[n].Cells[1].Value = txtid.Text;
-            dataGridView1.Rows[n].Cells[2].Value = txtcategory.Text;
-            dataGridView1.Rows[n].Cells[3].Value = txtprice.Text;*/
+            txtprice.Text = " ";
 
         }
 

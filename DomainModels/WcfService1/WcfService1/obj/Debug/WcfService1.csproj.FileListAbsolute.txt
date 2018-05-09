@@ -38,3 +38,8 @@ C:\git\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.pdb
 C:\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
 C:\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.dll
 C:\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\saif\Desktop\git\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\saif\Desktop\git\food-order\DomainModels\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\saif\Desktop\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\saif\Desktop\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\saif\Desktop\git\food-order\DomainModels\WcfService1\WcfService1\obj\Debug\WcfService1.pdb

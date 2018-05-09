@@ -78,3 +78,23 @@ C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resou
 C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.User_food_list.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.MyOrder.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.User_food_list.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe.config
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.exe
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csprojResolveAssemblyReference.cache
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Additems.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.cmdAdminpage.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.deleteitem.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Infopage.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Login.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.mainpage.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.MyOrder.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Properties.Resources.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Registration.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.User_food_list.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.csproj.GenerateResource.Cache
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.exe
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\bin\Debug\Domain Models.pdb
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain Models.pdb
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Conform_Order.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.OrderList.resources
+C:\Users\saif\Desktop\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.UserRecord.resources

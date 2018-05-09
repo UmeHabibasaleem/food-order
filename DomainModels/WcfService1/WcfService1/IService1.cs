@@ -20,7 +20,7 @@ namespace WcfService1
 
         
         [OperationContract]
-        void enteritems(string productName, string catagory, string id, string ima);
+        void enteritems(string productName, string catagory, string id, string ima,string item);
 
         [OperationContract]
         List<Product> Showproduct();
@@ -38,6 +38,15 @@ namespace WcfService1
 
          [OperationContract]
         void deleteitems(string productName, string catagory, string id, string image , string pri);
+
+         [OperationContract]
+         void Orderdate(string Date, string number);
+
+         [OperationContract]
+         List<Order> ShowOrder();
+
+         [OperationContract]
+         List<UserInformation> ShowUser();
 
         /*[OperationContract]
         int getlengthofarray();*/ 

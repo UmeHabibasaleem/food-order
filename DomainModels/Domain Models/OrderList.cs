@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Domain_Models
 {
-    public partial class MyOrder : Form
+    public partial class OrderList : Form
     {
-        public MyOrder()
+        public OrderList()
         {
             InitializeComponent();
         }
@@ -21,21 +21,15 @@ namespace Domain_Models
         {
             BindingSource source = new BindingSource();
             localhost.Service1 server = new localhost.Service1();
-            server.ShowUserProduct();
-            source.DataSource = server.ShowUserProduct();
+            source.DataSource = server.ShowOrder();
             dataGridView1.DataSource = source;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cmdAdminpage adm = new cmdAdminpage();
+            cmdAdminpage admin = new cmdAdminpage();
             this.Hide();
-            adm.Show();
+            admin.Show();
         }
     }
 }

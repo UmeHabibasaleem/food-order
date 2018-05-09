@@ -7,8 +7,11 @@ namespace WcfService1
 {
     public class OrderDL
     {
-        public static List<Order> Order = new List<Order>();
-        //void confirmOrder();
+        public static List<Order> items = new List<Order>();
+        public void addItems(Order t)
+        {
+            items.Add(t);
+        }
         //void deleteOrder();
     }
 }

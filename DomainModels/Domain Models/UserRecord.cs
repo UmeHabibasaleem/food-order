@@ -10,32 +10,26 @@ using System.Windows.Forms;
 
 namespace Domain_Models
 {
-    public partial class MyOrder : Form
+    public partial class UserRecord : Form
     {
-        public MyOrder()
+        public UserRecord()
         {
             InitializeComponent();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cmdAdminpage admin = new cmdAdminpage();
+            this.Hide();
+            admin.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             BindingSource source = new BindingSource();
             localhost.Service1 server = new localhost.Service1();
-            server.ShowUserProduct();
-            source.DataSource = server.ShowUserProduct();
+            source.DataSource = server.ShowUser();
             dataGridView1.DataSource = source;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            cmdAdminpage adm = new cmdAdminpage();
-            this.Hide();
-            adm.Show();
         }
     }
 }

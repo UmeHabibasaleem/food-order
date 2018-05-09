@@ -49,6 +49,24 @@
   <wsdl:message name="IService1_deleteitems_OutputMessage">
     <wsdl:part name="parameters" element="tns:deleteitemsResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_Orderdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orderdate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Orderdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowUserResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
   </wsdl:message>
@@ -89,6 +107,18 @@
     <wsdl:operation name="deleteitems">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteitems" message="tns:IService1_deleteitems_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteitemsResponse" message="tns:IService1_deleteitems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orderdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Orderdate" message="tns:IService1_Orderdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/OrderdateResponse" message="tns:IService1_Orderdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowOrder" message="tns:IService1_ShowOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowOrderResponse" message="tns:IService1_ShowOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowUser" message="tns:IService1_ShowUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowUserResponse" message="tns:IService1_ShowUser_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -157,6 +187,33 @@
     </wsdl:operation>
     <wsdl:operation name="deleteitems">
       <soap:operation soapAction="http://tempuri.org/IService1/deleteitems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orderdate">
+      <soap:operation soapAction="http://tempuri.org/IService1/Orderdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowOrder">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

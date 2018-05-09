@@ -20,7 +20,7 @@ namespace Domain_Models
         private void cmddelete_Click(object sender, EventArgs e)
         {
             localhost.Service1 server = new localhost.Service1();
-            server.deleteitems(txtitemname.Text, txtcategory.Text, txtid.Text, txtimage.Text);
+            server.deleteitems(txtitemname.Text, txtcategory.Text, txtid.Text, txtimage.Text,textBox1.Text);
             txtitemname.Text = " ";
             txtcategory.Text = " ";
             txtid.Text = " ";

@@ -44,5 +44,20 @@ namespace Domain_Models
             this.Hide();
             f.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Conform_Order ord = new Conform_Order();
+            this.Hide();
+            ord.Show();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            UserRecord record = new UserRecord();
+            this.Hide();
+            record.Show();
+
+        }
     }
 }

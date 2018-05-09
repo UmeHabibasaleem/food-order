@@ -32,6 +32,8 @@
             this.cmdRemove = new System.Windows.Forms.Button();
             this.txtAddItems = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -74,11 +76,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(133, 372);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 48);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "conform order";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Button4
+            // 
+            this.Button4.Location = new System.Drawing.Point(405, 28);
+            this.Button4.Name = "Button4";
+            this.Button4.Size = new System.Drawing.Size(148, 53);
+            this.Button4.TabIndex = 9;
+            this.Button4.Text = "UserRecord";
+            this.Button4.UseVisualStyleBackColor = true;
+            this.Button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
             // cmdAdminpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 384);
+            this.ClientSize = new System.Drawing.Size(655, 432);
+            this.Controls.Add(this.Button4);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.cmdRemove);
@@ -95,5 +119,7 @@
         private System.Windows.Forms.Button cmdRemove;
         private System.Windows.Forms.Button txtAddItems;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Button4;
     }
 }

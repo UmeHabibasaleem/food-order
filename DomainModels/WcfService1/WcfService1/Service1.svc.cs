@@ -58,13 +58,14 @@ namespace WcfService1
             }
             return exist;
         }
-        public void enteritems(string productName, string catagory, string id, string ima)
+        public void enteritems(string productName, string catagory, string id, string ima,string price)
         {
             Product item = new Product();
             item.Name = productName;
             item.Id = id;
             item.Category = catagory;
             item.Image = ima;
+            item.Price = price;
             Shoppingcart cart = new Shoppingcart();
             cart.addItems(item);
         }
@@ -85,7 +86,22 @@ namespace WcfService1
             UserSelectedItems user = new UserSelectedItems();
             user.useradditems(item);
         }
-
+        public void Orderdate(string date, string number)
+        {
+            Order or = new Order();
+            or.Date = date;
+            or.Number = number;
+            OrderDL dl = new OrderDL();
+            dl.addItems(or);
+        }
+        public List<Order> ShowOrder()
+        {
+            return OrderDL.items;
+        }
+        public List<UserInformation> ShowUser()
+        {
+            return User_DL.user;
+        }
 
         /*public Product searchitems(int i)
         {
