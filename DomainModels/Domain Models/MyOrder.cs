@@ -44,5 +44,12 @@ namespace Domain_Models
             this.Hide();
             f.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Delivered_order d1 = new Delivered_order();
+            this.Hide();
+            d1.Show();
+        }
     }
 }

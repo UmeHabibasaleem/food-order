@@ -70,6 +70,12 @@
     <Compile Include="deleteitem.Designer.cs">
       <DependentUpon>deleteitem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivered_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivered_order.Designer.cs">
+      <DependentUpon>Delivered_order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Display.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="deleteitem.resx">
       <DependentUpon>deleteitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivered_order.resx">
+      <DependentUpon>Delivered_order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.cs</DependentUpon>

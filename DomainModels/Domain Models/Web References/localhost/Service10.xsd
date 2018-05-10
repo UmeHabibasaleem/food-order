@@ -73,6 +73,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="delteOrder">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delteOrderResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
   <xs:element name="userfeedback">
     <xs:complexType>
       <xs:sequence />

@@ -29,6 +29,11 @@ namespace WcfService1
         List<UserProduct> ShowUserProduct();
 
         [OperationContract]
+        void delteOrder();
+
+
+
+        [OperationContract]
         List<feedback> userfeedback();
 
         [OperationContract]

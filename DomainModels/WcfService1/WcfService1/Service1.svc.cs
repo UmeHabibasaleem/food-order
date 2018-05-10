@@ -146,6 +146,14 @@ namespace WcfService1
 
         }
 
+        public void delteOrder()
+        {
+            UserSelectedItems u1 = new UserSelectedItems();
+            foreach (UserProduct p in UserSelectedItems.useritems.ToArray())
+            {
+                u1.deleteorderitem(p);
+            }
+        }
 
 
 

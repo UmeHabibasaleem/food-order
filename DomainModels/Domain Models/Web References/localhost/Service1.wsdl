@@ -37,6 +37,12 @@
   <wsdl:message name="IService1_ShowUserProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowUserProductResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_delteOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:delteOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delteOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delteOrderResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_userfeedback_InputMessage">
     <wsdl:part name="parameters" element="tns:userfeedback" />
   </wsdl:message>
@@ -111,6 +117,10 @@
     <wsdl:operation name="ShowUserProduct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowUserProduct" message="tns:IService1_ShowUserProduct_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowUserProductResponse" message="tns:IService1_ShowUserProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delteOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/delteOrder" message="tns:IService1_delteOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/delteOrderResponse" message="tns:IService1_delteOrder_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="userfeedback">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/userfeedback" message="tns:IService1_userfeedback_InputMessage" />
@@ -189,6 +199,15 @@
     </wsdl:operation>
     <wsdl:operation name="ShowUserProduct">
       <soap:operation soapAction="http://tempuri.org/IService1/ShowUserProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delteOrder">
+      <soap:operation soapAction="http://tempuri.org/IService1/delteOrder" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -103,3 +103,10 @@ C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\D
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.UserRecord.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Feedback.resources
 C:\Users\Administrator\Desktop\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Display.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Conform_Order.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Delivered_order.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Display.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.Feedback.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.MyOrder.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.OrderList.resources
+C:\git\food-order\DomainModels\Domain Models\obj\Debug\Domain_Models.UserRecord.resources

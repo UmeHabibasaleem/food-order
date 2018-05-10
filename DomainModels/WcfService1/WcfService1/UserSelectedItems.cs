@@ -13,5 +13,9 @@ namespace WcfService1
         {
             useritems.Add(t); 
         }
+        public void deleteorderitem(UserProduct t)
+        {
+            useritems.Remove(t);
+        }
     }
 }
