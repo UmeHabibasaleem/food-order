@@ -10,39 +10,27 @@ using System.Windows.Forms;
 
 namespace Domain_Models
 {
-    public partial class MyOrder : Form
+    public partial class Display : Form
     {
-        public MyOrder()
+        public Display()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BindingSource source = new BindingSource();
             localhost.Service1 server = new localhost.Service1();
-            server.ShowUserProduct();
-            source.DataSource = server.ShowUserProduct();
+            BindingSource source = new BindingSource();
+            server.userfeedback();
+            source.DataSource = server.userfeedback();
             dataGridView1.DataSource = source;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cmdAdminpage adm = new cmdAdminpage();
+            cmdAdminpage a = new cmdAdminpage();
             this.Hide();
-            adm.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Feedback f = new Feedback();
-            this.Hide();
-            f.Show();
+            a.Show();
         }
     }
 }

@@ -59,5 +59,12 @@ namespace Domain_Models
             record.Show();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Display d = new Display();
+            this.Hide();
+            d.Show();
+        }
     }
 }

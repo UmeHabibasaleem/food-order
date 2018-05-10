@@ -30,6 +30,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UserProduct" nillable="true" type="tns:UserProduct" />
+  <xs:complexType name="ArrayOffeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="feedback" nillable="true" type="tns:feedback" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOffeedback" nillable="true" type="tns:ArrayOffeedback" />
+  <xs:complexType name="feedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fedback1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="feedback" nillable="true" type="tns:feedback" />
   <xs:complexType name="ArrayOfOrder">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />

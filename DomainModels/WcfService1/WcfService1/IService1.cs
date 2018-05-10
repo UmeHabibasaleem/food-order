@@ -29,6 +29,12 @@ namespace WcfService1
         List<UserProduct> ShowUserProduct();
 
         [OperationContract]
+        List<feedback> userfeedback();
+
+        [OperationContract]
+        void userviews(string feedback);
+
+        [OperationContract]
         void Useritems(string productName, string price, string id);
 
 

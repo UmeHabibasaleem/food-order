@@ -102,6 +102,19 @@ namespace WcfService1
         {
             return User_DL.user;
         }
+        public List<feedback> userfeedback()
+        {
+            return feedback_DL.userfeed;
+                      
+        }
+        public void userviews(string feedback)
+        {
+            feedback f = new feedback();
+            f.Fedback1 = feedback;
+            feedback_DL dl = new feedback_DL();
+            dl.userfeedback(f);
+
+        }
 
         /*public Product searchitems(int i)
         {

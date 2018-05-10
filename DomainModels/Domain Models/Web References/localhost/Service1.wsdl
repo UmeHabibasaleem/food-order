@@ -37,6 +37,18 @@
   <wsdl:message name="IService1_ShowUserProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowUserProductResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_userfeedback_InputMessage">
+    <wsdl:part name="parameters" element="tns:userfeedback" />
+  </wsdl:message>
+  <wsdl:message name="IService1_userfeedback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:userfeedbackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_userviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:userviews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_userviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:userviewsResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_Useritems_InputMessage">
     <wsdl:part name="parameters" element="tns:Useritems" />
   </wsdl:message>
@@ -99,6 +111,14 @@
     <wsdl:operation name="ShowUserProduct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowUserProduct" message="tns:IService1_ShowUserProduct_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowUserProductResponse" message="tns:IService1_ShowUserProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="userfeedback">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/userfeedback" message="tns:IService1_userfeedback_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/userfeedbackResponse" message="tns:IService1_userfeedback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="userviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/userviews" message="tns:IService1_userviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/userviewsResponse" message="tns:IService1_userviews_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Useritems">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Useritems" message="tns:IService1_Useritems_InputMessage" />
@@ -169,6 +189,24 @@
     </wsdl:operation>
     <wsdl:operation name="ShowUserProduct">
       <soap:operation soapAction="http://tempuri.org/IService1/ShowUserProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userfeedback">
+      <soap:operation soapAction="http://tempuri.org/IService1/userfeedback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userviews">
+      <soap:operation soapAction="http://tempuri.org/IService1/userviews" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

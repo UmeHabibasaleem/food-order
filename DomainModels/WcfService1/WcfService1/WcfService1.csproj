@@ -65,6 +65,8 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeDL.cs" />
+    <Compile Include="feedback.cs" />
+    <Compile Include="feedback_DL.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderDL.cs" />
