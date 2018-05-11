@@ -30,6 +30,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UserProduct" nillable="true" type="tns:UserProduct" />
+  <xs:complexType name="ArrayOfAdmin_restriction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Admin_restriction" nillable="true" type="tns:Admin_restriction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAdmin_restriction" nillable="true" type="tns:ArrayOfAdmin_restriction" />
+  <xs:complexType name="Admin_restriction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Admin_Password1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Admin_name1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Admin_restriction" nillable="true" type="tns:Admin_restriction" />
   <xs:complexType name="ArrayOffeedback">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="feedback" nillable="true" type="tns:feedback" />

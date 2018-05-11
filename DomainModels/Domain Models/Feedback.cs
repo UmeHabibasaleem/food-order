@@ -31,9 +31,11 @@ namespace Domain_Models
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cmdAdminpage b = new cmdAdminpage();
+           
+            MyOrder b = new MyOrder();
             this.Hide();
             b.Show();
+            
         }
     }
 }

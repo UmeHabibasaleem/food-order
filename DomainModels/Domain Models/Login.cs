@@ -40,6 +40,8 @@ namespace Domain_Models
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            localhost.Service1 server = new localhost.Service1();
+            server.Identify_admin(txtUsername.Text, txtpassword.Text);
             txtUsername.Text = " ";
             txtpassword.Text = " ";
             cmdAdminpage admin = new cmdAdminpage();

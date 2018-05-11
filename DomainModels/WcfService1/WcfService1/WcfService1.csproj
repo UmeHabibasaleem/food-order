@@ -63,6 +63,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Member.cs" />
+    <Compile Include="Admin_restriction.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeDL.cs" />
     <Compile Include="feedback.cs" />

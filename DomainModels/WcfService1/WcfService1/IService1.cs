@@ -31,6 +31,11 @@ namespace WcfService1
         [OperationContract]
         void delteOrder();
 
+        [OperationContract]
+        void Identify_admin(string name , string password );
+
+        [OperationContract]
+        List<Admin_restriction>Admin_list();
 
 
         [OperationContract]
@@ -42,6 +47,8 @@ namespace WcfService1
         [OperationContract]
         void Useritems(string productName, string price, string id);
 
+        [OperationContract]
+        bool loginAsAdmin();
 
         /*[OperationContract]
         Product searchitems(int i);*/

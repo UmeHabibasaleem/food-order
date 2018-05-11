@@ -83,6 +83,31 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="Identify_admin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Identify_adminResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Admin_list">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Admin_listResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="Admin_listResult" nillable="true" type="q3:ArrayOfAdmin_restriction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="userfeedback">
     <xs:complexType>
       <xs:sequence />
@@ -91,7 +116,7 @@
   <xs:element name="userfeedbackResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="userfeedbackResult" nillable="true" type="q3:ArrayOffeedback" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="userfeedbackResult" nillable="true" type="q4:ArrayOffeedback" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -119,6 +144,18 @@
   <xs:element name="UseritemsResponse">
     <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loginAsAdmin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loginAsAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginAsAdminResult" type="xs:boolean" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="deleteitems">
@@ -158,7 +195,7 @@
   <xs:element name="ShowOrderResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="ShowOrderResult" nillable="true" type="q4:ArrayOfOrder" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="ShowOrderResult" nillable="true" type="q5:ArrayOfOrder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -170,7 +207,7 @@
   <xs:element name="ShowUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="ShowUserResult" nillable="true" type="q5:ArrayOfUserInformation" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="ShowUserResult" nillable="true" type="q6:ArrayOfUserInformation" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -191,14 +228,14 @@
   <xs:element name="GetDataUsingDataContract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="composite" nillable="true" type="q6:CompositeType" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="composite" nillable="true" type="q7:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetDataUsingDataContractResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q7:CompositeType" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q8:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

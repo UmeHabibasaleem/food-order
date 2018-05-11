@@ -41,11 +41,17 @@ namespace Domain_Models.localhost {
         
         private System.Threading.SendOrPostCallback delteOrderOperationCompleted;
         
+        private System.Threading.SendOrPostCallback Identify_adminOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Admin_listOperationCompleted;
+        
         private System.Threading.SendOrPostCallback userfeedbackOperationCompleted;
         
         private System.Threading.SendOrPostCallback userviewsOperationCompleted;
         
         private System.Threading.SendOrPostCallback UseritemsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback loginAsAdminOperationCompleted;
         
         private System.Threading.SendOrPostCallback deleteitemsOperationCompleted;
         
@@ -116,6 +122,12 @@ namespace Domain_Models.localhost {
         public event delteOrderCompletedEventHandler delteOrderCompleted;
         
         /// <remarks/>
+        public event Identify_adminCompletedEventHandler Identify_adminCompleted;
+        
+        /// <remarks/>
+        public event Admin_listCompletedEventHandler Admin_listCompleted;
+        
+        /// <remarks/>
         public event userfeedbackCompletedEventHandler userfeedbackCompleted;
         
         /// <remarks/>
@@ -123,6 +135,9 @@ namespace Domain_Models.localhost {
         
         /// <remarks/>
         public event UseritemsCompletedEventHandler UseritemsCompleted;
+        
+        /// <remarks/>
+        public event loginAsAdminCompletedEventHandler loginAsAdminCompleted;
         
         /// <remarks/>
         public event deleteitemsCompletedEventHandler deleteitemsCompleted;
@@ -333,6 +348,65 @@ namespace Domain_Models.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Identify_admin", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void Identify_admin([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password) {
+            this.Invoke("Identify_admin", new object[] {
+                        name,
+                        password});
+        }
+        
+        /// <remarks/>
+        public void Identify_adminAsync(string name, string password) {
+            this.Identify_adminAsync(name, password, null);
+        }
+        
+        /// <remarks/>
+        public void Identify_adminAsync(string name, string password, object userState) {
+            if ((this.Identify_adminOperationCompleted == null)) {
+                this.Identify_adminOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIdentify_adminOperationCompleted);
+            }
+            this.InvokeAsync("Identify_admin", new object[] {
+                        name,
+                        password}, this.Identify_adminOperationCompleted, userState);
+        }
+        
+        private void OnIdentify_adminOperationCompleted(object arg) {
+            if ((this.Identify_adminCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Identify_adminCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Admin_list", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
+        public Admin_restriction[] Admin_list() {
+            object[] results = this.Invoke("Admin_list", new object[0]);
+            return ((Admin_restriction[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Admin_listAsync() {
+            this.Admin_listAsync(null);
+        }
+        
+        /// <remarks/>
+        public void Admin_listAsync(object userState) {
+            if ((this.Admin_listOperationCompleted == null)) {
+                this.Admin_listOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAdmin_listOperationCompleted);
+            }
+            this.InvokeAsync("Admin_list", new object[0], this.Admin_listOperationCompleted, userState);
+        }
+        
+        private void OnAdmin_listOperationCompleted(object arg) {
+            if ((this.Admin_listCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Admin_listCompleted(this, new Admin_listCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/userfeedback", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
@@ -418,6 +492,34 @@ namespace Domain_Models.localhost {
             if ((this.UseritemsCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.UseritemsCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/loginAsAdmin", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void loginAsAdmin(out bool loginAsAdminResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool loginAsAdminResultSpecified) {
+            object[] results = this.Invoke("loginAsAdmin", new object[0]);
+            loginAsAdminResult = ((bool)(results[0]));
+            loginAsAdminResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void loginAsAdminAsync() {
+            this.loginAsAdminAsync(null);
+        }
+        
+        /// <remarks/>
+        public void loginAsAdminAsync(object userState) {
+            if ((this.loginAsAdminOperationCompleted == null)) {
+                this.loginAsAdminOperationCompleted = new System.Threading.SendOrPostCallback(this.OnloginAsAdminOperationCompleted);
+            }
+            this.InvokeAsync("loginAsAdmin", new object[0], this.loginAsAdminOperationCompleted, userState);
+        }
+        
+        private void OnloginAsAdminOperationCompleted(object arg) {
+            if ((this.loginAsAdminCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.loginAsAdminCompleted(this, new loginAsAdminCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -897,6 +999,41 @@ namespace Domain_Models.localhost {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
+    public partial class Admin_restriction {
+        
+        private string admin_Password1Field;
+        
+        private string admin_name1Field;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Admin_Password1 {
+            get {
+                return this.admin_Password1Field;
+            }
+            set {
+                this.admin_Password1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Admin_name1 {
+            get {
+                return this.admin_name1Field;
+            }
+            set {
+                this.admin_name1Field = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
     public partial class UserProduct {
         
         private string idField;
@@ -1039,6 +1176,36 @@ namespace Domain_Models.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void Identify_adminCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void Admin_listCompletedEventHandler(object sender, Admin_listCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Admin_listCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Admin_listCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Admin_restriction[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Admin_restriction[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
     public delegate void userfeedbackCompletedEventHandler(object sender, userfeedbackCompletedEventArgs e);
     
     /// <remarks/>
@@ -1070,6 +1237,40 @@ namespace Domain_Models.localhost {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
     public delegate void UseritemsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void loginAsAdminCompletedEventHandler(object sender, loginAsAdminCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class loginAsAdminCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal loginAsAdminCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool loginAsAdminResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool loginAsAdminResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]

@@ -43,6 +43,18 @@
   <wsdl:message name="IService1_delteOrder_OutputMessage">
     <wsdl:part name="parameters" element="tns:delteOrderResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_Identify_admin_InputMessage">
+    <wsdl:part name="parameters" element="tns:Identify_admin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Identify_admin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Identify_adminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Admin_list_InputMessage">
+    <wsdl:part name="parameters" element="tns:Admin_list" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Admin_list_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Admin_listResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_userfeedback_InputMessage">
     <wsdl:part name="parameters" element="tns:userfeedback" />
   </wsdl:message>
@@ -60,6 +72,12 @@
   </wsdl:message>
   <wsdl:message name="IService1_Useritems_OutputMessage">
     <wsdl:part name="parameters" element="tns:UseritemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loginAsAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:loginAsAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loginAsAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginAsAdminResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_deleteitems_InputMessage">
     <wsdl:part name="parameters" element="tns:deleteitems" />
@@ -122,6 +140,14 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/delteOrder" message="tns:IService1_delteOrder_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/delteOrderResponse" message="tns:IService1_delteOrder_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="Identify_admin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Identify_admin" message="tns:IService1_Identify_admin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Identify_adminResponse" message="tns:IService1_Identify_admin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Admin_list">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Admin_list" message="tns:IService1_Admin_list_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Admin_listResponse" message="tns:IService1_Admin_list_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="userfeedback">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/userfeedback" message="tns:IService1_userfeedback_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/userfeedbackResponse" message="tns:IService1_userfeedback_OutputMessage" />
@@ -133,6 +159,10 @@
     <wsdl:operation name="Useritems">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Useritems" message="tns:IService1_Useritems_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/UseritemsResponse" message="tns:IService1_Useritems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loginAsAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/loginAsAdmin" message="tns:IService1_loginAsAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginAsAdminResponse" message="tns:IService1_loginAsAdmin_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="deleteitems">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteitems" message="tns:IService1_deleteitems_InputMessage" />
@@ -215,6 +245,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Identify_admin">
+      <soap:operation soapAction="http://tempuri.org/IService1/Identify_admin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Admin_list">
+      <soap:operation soapAction="http://tempuri.org/IService1/Admin_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="userfeedback">
       <soap:operation soapAction="http://tempuri.org/IService1/userfeedback" style="document" />
       <wsdl:input>
@@ -235,6 +283,15 @@
     </wsdl:operation>
     <wsdl:operation name="Useritems">
       <soap:operation soapAction="http://tempuri.org/IService1/Useritems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginAsAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/loginAsAdmin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

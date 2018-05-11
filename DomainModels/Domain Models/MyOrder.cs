@@ -33,9 +33,21 @@ namespace Domain_Models
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool a ;
+            bool y;
+            localhost.Service1 server = new localhost.Service1();
+            server.loginAsAdmin(out a , out y);
+            if (a == true)
+            {
             cmdAdminpage adm = new cmdAdminpage();
             this.Hide();
             adm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Your order is confirmed");
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)

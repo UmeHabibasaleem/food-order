@@ -156,8 +156,40 @@ namespace WcfService1
         }
 
 
+        public void Identify_admin(string name, string password)
+        {
+            Admin_restriction a1 = new Admin_restriction();
+            a1.Admin_name1 = name;
+            a1.Admin_Password1 = password;
+            Admin_Member m1 = new Admin_Member();
+            m1.identify_admin(a1);
+        }
 
+        public List<Admin_restriction> Admin_list()
+        {
+            return Admin_Member.member;
+        }
 
+        public bool loginAsAdmin()
+        {
+            Admin_Member m2 = new Admin_Member();
+            if (m2.empty_list() == true)
+            {
+                return false; 
+            }
+
+            else
+            {
+
+                foreach (Admin_restriction a1 in Admin_Member.member.ToArray())
+                {
+                    m2.logout_admin(a1);
+                }
+                return true;
+                
+               
+            }
+        }
 
 
 
